@@ -9,6 +9,8 @@
   "scope": "/",
   "start_url": "/",
   "display_override": ["window-controls-overlay"],
+  "lang": "en-US",
+  "dir": "auto",
   "protocol_handlers": [
     {
       "protocol": "mailto",
