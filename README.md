@@ -1,1 +1,2 @@
-# snowballtools-pwa-static-template-
+# snowballtools-pwa-static-template
+

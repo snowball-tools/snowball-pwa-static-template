@@ -1,60 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Snowball Tools PWA Template</title>
-        <meta name="description" content="Snowball Tools PWA Template App" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#3390ff" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<html lang="en-US">
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@snowballtools" />
-        <meta name="twitter:url" content="https://pwa.snowballtools.xyz" />
-        <meta name="twitter:title" content="Snowball Tools PWA Template" />
-        <meta name="twitter:description" content="Snowball Tools PWA Template App" />
-        <meta name="twitter:image" content="https://pwa.snowballtools.xyz/Social_Image.svg" />
+<head>
+    <title>Snowball Tools PWA Template</title>
+    <meta name="description" content="Snowball Tools PWA Template App">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3390ff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta charset="utf-8">
 
-        <!-- Open Graph -->
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Snowball Tools PWA Template" />
-        <meta property="og:description" content="Snowball Tools PWA Template App" />
-        <meta property="og:site_name" content="Snowball Tools PWA Template" />
-        <meta property="og:url" content="https://pwa.snowballtools.xyz" />
-        <meta property="og:image" content="https://pwa.snowballtools.xyz/Social_Image.svg" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@snowballtools">
+    <meta name="twitter:url" content="https://pwa.snowballtools.xyz">
+    <meta name="twitter:title" content="Snowball Tools PWA Template">
+    <meta name="twitter:description" content="Snowball Tools PWA Template App">
+    <meta name="twitter:image" content="https://pwa.snowballtools.xyz/assets/social/Social_Image.svg">
 
-        <link rel="preload" href="/manifest.json" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="stylesheet" href="/css/native-like-experience.css" />
-        <script async src="https://unpkg.com/pwacompat" crossOrigin="anonymous"></script>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Snowball Tools PWA Template">
+    <meta property="og:description" content="Snowball Tools PWA Template App">
+    <meta property="og:site_name" content="Snowball Tools PWA Template">
+    <meta property="og:url" content="https://pwa.snowballtools.xyz">
+    <meta property="og:image" content="https://pwa.snowballtools.xyz/assets/social/Social_Image.svg">
 
-        <!-- Apple touch icon -->
-        <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon_120.png" />
-    <script>navigator.serviceWorker.register("service-worker.js")</script> 
-    <script>navigator.serviceWorker.register("service-worker.js")</script> 
-        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon_180.png" />
-    </head>
-    <body style="margin: 0">
-        <header style="display: flex; align-items: center; padding: 16px; background-color: #3390ff; box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14),0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);">
-            <svg style="margin-right: 12px" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path
-                    d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z"
-                    fill="black"
-                />
-            </svg>
-            <h4 style="margin: 0; font-weight: 500; color: black">App Name</h4>
-        </header>
+    <link rel="preload" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/css/native-like-experience.css">
+    <script async="" src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
 
-        <script>
-            if ("serviceWorker" in navigator) {
-                window.addEventListener("load", function () {
-                    navigator.serviceWorker
-                        .register("/serviceWorker.js")
-                        .then((registration) => {
-                            console.log("SW registration successful");
-                        });
-                });
-            }
-        </script>
-    </body>
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon_120.png">
+    <script>navigator.serviceWorker.register("service-worker.js")</script>
+    <script>navigator.serviceWorker.register("service-worker.js")</script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon_180.png">
+</head>
+
+<body>
+    <h1>Hello, PWA!</h1>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("/service-worker.js")
+                    .then((registration) => {
+                        console.log("SW registration successful");
+                    });
+            });
+        }
+    </script>
+</body>
+
 </html>

@@ -1,7 +1,7 @@
 {
-  "name": "snowball-pwa-template",
-  "short_name": "snowball-pwa",
-  "description": "snowball tools template app",
+  "name": "snowball-pwa-static-template",
+  "short_name": "snowball",
+  "description": "snowball tools static template app",
   "theme_color": "#3390ff",
   "background_color": "#ffffff",
   "display": "standalone",
@@ -21,56 +21,41 @@
   ],
   "icons": [
     {
-      "src": "icons/manifest-icon-192.maskable.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/manifest-icon-192.maskable.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icons/manifest-icon-512.maskable.png",
+      "src": "assets/icons/icon_512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "maskable any"
     },
     {
-      "src": "icons/manifest-icon-512.maskable.png",
-      "sizes": "512x512",
+      "src": "assets/icons/icon_192.png",
+      "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     }
   ],
   "screenshots": [
     {
-      "src": "assets/screenshots/screen.png",
-      "sizes": "1617x1012",
+      "src": "assets/screenshots/screenshot.png",
+      "sizes": "1280x720",
       "type": "image/png"
     }
   ],
   "features": ["Cross Platform", "fast", "simple"],
-  "categories": ["social"],
+  "categories": [],
   "shortcuts": [
     {
-      "name": "Open About",
-      "short_name": "About",
-      "description": "Open the about page",
-      "url": "/about",
-      "icons": [{ "src": "assets/icons/192x192.png", "sizes": "192x192" }]
-    }
-  ],
-  "widgets": [
-    {
-      "name": "Starter Widget",
-      "tag": "starterWidget",
-      "ms_ac_template": "widget/ac.json",
-      "data": "widget/data.json",
-      "description": "A simple widget example from pwa-starter.",
-      "screenshots": []
+      "name": "Snowball Tools",
+      "short_name": "Snowball Tools",
+      "description": "Snowball Tools",
+      "url": "/",
+      "icons": [
+        {
+          "src": "assets/icons/icon_512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable any"
+        }
+      ]
     }
   ]
 }
